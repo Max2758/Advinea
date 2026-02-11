@@ -1,0 +1,39 @@
+[
+  {
+    "date": "2026-03-06",
+    "time": "19h30",
+    "title": "Soirée karaoké",
+    "badge": "Chanson",
+    "description": "Soirée spécial Années 80s. Tout style confondus.",
+    "price": "25€ / pers.",
+    "spots": "20 places",
+    "reservation": "06 48 28 88 85",
+    "image": "assets/soiree-loire.jpg"
+  },
+
+  {
+    "date": "2026-03-06",
+    "time": "19h30",
+    "title": "Soirée dégustation - Vins de Loire",
+    "badge": "Dégustation",
+    "description": "Découverte de 5 vins + planche à partager. Places limitées.",
+    "price": "25€ / pers.",
+    "spots": "20 places",
+    "reservation": "06 48 28 88 85",
+    "image": "assets/soiree-loire.jpg"
+  },
+
+  {
+    "date": "2026-03-06",
+    "time": "19h30",
+    "title": "Soirée Horreur",
+    "badge": "Halloween",
+    "description": "Soirée déguisée.",
+    "price": "25€ / pers.",
+    "spots": "20 places",
+    "reservation": "06 48 28 88 85",
+    "image": "assets/soiree-loire.jpg"
+  }
+]
+
+
