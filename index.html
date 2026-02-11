@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>L'Advinéa — Bar à vin | La Machine</title>
+  <meta name="description" content="L'Advinéa, bar à vin à La Machine. Planches à partager, menus, prix et horaires." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="name">L'Advinéa</div>
+        <div class="sub">Bar à vin • La Machine</div>
+      </div>
+
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#horaires">Horaires</a></li>
+          <li><a href="#contact">Réservations</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn" href="tel:+33648288885">Réserver • 06 48 28 88 85</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="card hero-left">
+          <span class="tag"><span class="dot"></span> Ambiance chaleureuse • Planches à partager</span>
+          <h1>Le bar à vin <span class="gold">où l'on prend le temps</span>.</h1>
+          <p class="lead">
+            À La Machine, <strong>L'Advinéa</strong> vous accueille pour déguster sur place,
+            entre amis ou en famille : planches charcuterie & fromage, boîte chaude,
+            et une sélection de boissons au bar.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#menu">Voir les planches & prix</a>
+            <a class="mini" href="#horaires">Horaires & disponibilité</a>
+            <a class="mini" href="#contact">Adresse & contact</a>
+          </div>
+        </div>
+
+        <div class="card hero-right">
+          <div class="gallery" aria-label="Galerie">
+            <div class="ph">
+              <img src="assets/bar-1.jpg" alt="Comptoir du bar" onerror="this.remove();">
+            </div>
+            <div class="ph">
+              <img src="assets/bar-2.jpg" alt="Ambiance intérieure" onerror="this.remove();">
+            </div>
+          </div>
+
+          <div class="status" role="status" aria-live="polite">
+            <div>
+              <strong>Disponibilité</strong><br>
+              <span id="nextInfo" class="muted">Chargement…</span>
+            </div>
+            <div id="openPill" class="pill">
+              <span class="led"></span>
+              <span id="openText">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Nos planches à partager</h2>
+          <p>À déguster sur place — entre amis ou en famille.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="paper">
+            <div class="paper-head">
+              <p class="kicker">L'Advinéa</p>
+              <p class="subtitle">Menu • Planches</p>
+            </div>
+            <div class="paper-body">
+              <div class="menu-list">
+                <div class="menu-item">
+                  <div>
+                    <strong>Planche mixte charcuterie & fromage</strong>
+                    <small>(2 pers.) • avec toasts</small>
+                  </div>
+                  <div class="price">22 €</div>
+                </div>
+
+                <div class="menu-item">
+                  <div>
+                    <strong>Boîte chaude + charcuterie</strong>
+                    <small>(2 pers.) • avec toasts</small>
+                  </div>
+                  <div class="price">18 €</div>
+                </div>
+
+                <div class="menu-item">
+                  <div>
+                    <strong>Boîte chaude + menu</strong>
+                    <small>(3 pers.)</small>
+                  </div>
+                  <div class="price">28 €</div>
+                </div>
+
+                <div class="menu-item">
+                  <div>
+                    <strong>Planche foie gras + pain d'épices</strong>
+                  </div>
+                  <div class="price">12,50 €</div>
+                </div>
+
+                <div class="menu-item">
+                  <div>
+                    <strong>Planche de fromages</strong>
+                  </div>
+                  <div class="price">18 €</div>
+                </div>
+              </div>
+
+              <div class="note">
+                 <strong>Boissons :</strong> large choix de boissons — s'adresser au bar.
+              </div>
+            </div>
+          </article>
+
+          <article class="card hours" id="horaires">
+            <div class="section-title" style="margin-bottom:10px;">
+              <h2>Horaires</h2>
+            </div>
+
+            <table aria-label="Horaires d'ouverture">
+              <tr><td>Lundi → Jeudi</td><td>10h - 21h</td></tr>
+              <tr><td>Vendredi</td><td>14h - 01h</td></tr>
+              <tr><td>Samedi</td><td>10h - 22h</td></tr>
+              <tr><td>Dimanche</td><td>12h - 21h</td></tr>
+            </table>
+
+            <p class="hint" id="todayHint">—</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-title">
+          <h2>Réservations & contact</h2>
+          <p>Appelez pour réserver. Adresse et accès rapide.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card contact">
+            <div class="row">
+              <a class="chip" href="tel:+33648288885">06 48 28 88 85</a>
+              <a class="chip" href="tel:+33616443499">06 16 44 34 99</a>
+            </div>
+            <div class="chip">📍 34 Avenue de la République, 58260 La Machine</div>
+            <div class="row">
+              <a class="btn" href="tel:+33648288885">Réserver maintenant</a>
+              <a class="mini" target="_blank" rel="noreferrer"
+                 href="https://www.google.com/maps/search/?api=1&query=34+Avenue+de+la+République,+58260+La+Machine">
+                 Ouvrir dans Google Maps
+              </a>
+            </div>
+          </div>
+
+          <div class="card contact">
+            <div class="tag"><span class="dot"></span> Infos rapides</div>
+            <div class="chip">Bar à vin • Ambiance cosy • Planches à partager</div>
+            <div class="chip">Charcuterie, fromages, foie gras, boîte chaude</div>
+            <div class="chip">Idéal pour un apéro, un afterwork ou une soirée détente</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap footer">
+      <div class="foot-row">
+        <div>© <span id="year"></span> L'Advinéa — Bar à vin, La Machine</div>
+      </div>
+    </div>
+  </main>
+  <script src="js/status.js"></script>
+</body>
+</html>
