@@ -72,7 +72,7 @@ nav a:hover{background: rgba(214,179,106,.10);}
 }
 
 .hero{padding:46px 0 28px;}
-.hero-grid{display:grid; grid-template-columns: 1.1fr .9fr; gap:22px; align-items:stretch;}
+.hero-grid{display:grid; grid-template-columns: .9fr 1.1fr; gap:22px; align-items:stretch;}
 .card{
   background: rgba(16,17,20,.72);
   border: 1px solid rgba(214,179,106,.14);
@@ -200,6 +200,8 @@ section{padding:26px 0}
   border:1px solid rgba(214,179,106,.18);
   background: rgba(16,17,20,.55);
   font-weight:800;
+  display: flex;
+  align-items: center;
 }
 
 .footer{padding:34px 0 50px; color:rgba(243,240,234,.75); border-top:1px solid rgba(214,179,106,.10); margin-top:18px;}
@@ -214,4 +216,36 @@ section{padding:26px 0}
   h1{font-size:38px}
   .grid-2{grid-template-columns:1fr}
   .brand .name{font-size:30px}
+}
+
+.info-banner{
+  padding: 16px 0 8px;
+}
+
+.info-card{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  padding: 14px 18px;
+  border-radius: 18px;
+  background: linear-gradient(
+    180deg,
+    rgba(214,179,106,.18),
+    rgba(214,179,106,.06)
+  );
+  border: 1px solid rgba(214,179,106,.35);
+  color: var(--text);
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
+  text-align: center;
+}
+
+.info-card p{
+  margin: 0;
+  line-height: 1.5;
+}
+
+.info-icon{
+  font-size: 20px;
 }
