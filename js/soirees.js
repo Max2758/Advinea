@@ -32,7 +32,7 @@ async function loadEvents(){
 
         ${e.description ? `<p class="event-desc">${escapeHtml(e.description)}</p>` : ""}
 
-        <div class="event-meta">
+       <!--  <div class="event-meta">
           ${e.price ? `<div class="event-chip">💶 ${escapeHtml(e.price)}</div>` : ""}
           ${e.spots ? `<div class="event-chip">🎟️ ${escapeHtml(e.spots)}</div>` : ""}
           <div class="event-chip">📞 ${escapeHtml(e.reservation || "06 48 28 88 85")}</div>
@@ -41,7 +41,7 @@ async function loadEvents(){
         <div class="event-actions">
           <a class="btn" href="tel:+33648288885">Réserver</a>
           <a class="mini" href="index.html#contact">Infos & contact</a>
-        </div>
+        </div> 
       </article>
     `).join("");
 
