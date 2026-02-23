@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,29 +8,41 @@
   <meta name="description" content="Soirées à thème à L'Advinéa : dégustations, musique, événements." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/soirees.css">
 </head>
 
 <body>
   <header>
-    <div class="wrap nav">
-      <div class="brand">
-        <div class="name">L'Advinéa</div>
-        <div class="sub">Bar à vin • La Machine</div>
+    <div class="nav-bar">
+      <div class="wrap nav">
+        <div class="brand">
+          <div class="name">L'Advinéa</div>
+          <div class="sub">Bar à vin • La Machine</div>
+        </div>
+
+        <nav aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#horaires">Horaires</a></li>
+            <li><a href="index.html#contact">Réservations</a></li>
+            <li><a href="index.html#soirees.html">Soirées</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn call-cta" href="tel:+33648288885">
+            <span class="call-full">Réserver • 06 48 28 88 85</span>
+          </a>
+
+          <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
       </div>
-
-      <nav aria-label="Navigation principale">
-        <ul>
-          <li><a href="index.html#menu">Menu</a></li>
-          <li><a href="index.html#horaires">Horaires</a></li>
-          <li><a href="soirees.html" aria-current="page">Soirées</a></li>
-          <li><a href="index.html#contact">Réservations</a></li>
-        </ul>
-      </nav>
-
-      <a class="btn" href="tel:+33648288885">Réserver • 06 48 28 88 85</a>
     </div>
   </header>
 
@@ -61,7 +74,8 @@
         <div id="eventsGrid" class="events-grid"></div>
 
         <div id="emptyState" class="card" style="padding:18px; display:none;">
-          <strong style="font-family:Playfair Display, serif; font-size:18px;">Aucune soirée annoncée pour le moment.</strong>
+          <strong style="font-family:Playfair Display, serif; font-size:18px;">Aucune soirée annoncée pour le
+            moment.</strong>
           <p class="muted" style="margin:8px 0 0; line-height:1.6;">
             Revenez bientôt ou contactez-nous pour connaître la prochaine date.
           </p>
@@ -77,7 +91,34 @@
     </div>
   </main>
 
-  <script src="js/soirees.js"></script>
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-panel">
 
+      <div class="drawer-top">
+        <div class="drawer-brand">
+          <div class="drawer-name">L'Advinéa</div>
+          <div class="drawer-sub">Bar à vin • La Machine</div>
+        </div>
+
+        <button class="drawer-close" type="button">✕</button>
+      </div>
+
+      <nav class="drawer-nav">
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#horaires">Horaires</a>
+        <a href="index.html#contact">Réservations</a>
+        <a href="soirees.html">Soirées</a>
+      </nav>
+
+      <a class="btn drawer-cta" href="tel:+33648288885">
+        Réserver • 06 48 28 88 85
+      </a>
+
+    </div>
+  </div>
+
+  <script src="js/menu.js"></script>
+  <script src="js/soirees.js"></script>
 </body>
+
 </html>

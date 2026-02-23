@@ -33,9 +33,13 @@
         </nav>
 
         <div class="header-actions">
-          <a class="btn" href="tel:+33648288885">
-            Réserver • 06 48 28 88 85
+          <a class="btn call-cta" href="tel:+33648288885">
+            <span class="call-full">Réserver • 06 48 28 88 85</span>
           </a>
+
+          <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+            ☰
+          </button>
         </div>
       </div>
     </div>
@@ -224,7 +228,35 @@
       </div>
     </div>
   </main>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-panel">
+
+      <div class="drawer-top">
+        <div class="drawer-brand">
+          <div class="drawer-name">L'Advinéa</div>
+          <div class="drawer-sub">Bar à vin • La Machine</div>
+        </div>
+
+        <button class="drawer-close" type="button">✕</button>
+      </div>
+
+      <nav class="drawer-nav">
+        <a href="#menu">Menu</a>
+        <a href="#horaires">Horaires</a>
+        <a href="#contact">Réservations</a>
+        <a href="soirees.html">Soirées</a>
+      </nav>
+
+      <a class="btn drawer-cta" href="tel:+33648288885">
+        Réserver • 06 48 28 88 85
+      </a>
+
+    </div>
+  </div>
+
   <script src="js/status.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>
