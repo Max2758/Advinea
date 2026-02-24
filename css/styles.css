@@ -612,22 +612,22 @@ section {
 .drawer-panel {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0%;
   height: 100%;
   width: min(92vw, 420px);
   background: rgba(16, 17, 20, .92);
   border-right: 1px solid rgba(214, 179, 106, .18);
   box-shadow: 18px 0 50px rgba(0, 0, 0, .55);
-  transform: translateX(-102%);
-  transition: transform .22s ease;
-  padding: 14px;
+  transform: translateX(98%);
+  transition: transform .40s ease;
+  padding: 16px;
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 14px;
 }
 
 .drawer.is-open .drawer-panel {
-  transform: translateX(0);
+  transform: translateX(-0);
 }
 
 .drawer-top {

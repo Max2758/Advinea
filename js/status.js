@@ -1,10 +1,9 @@
 const schedule = {
-  1: [[10,0,21,0]],
-  2: [[10,0,21,0]],
-  3: [[10,0,21,0]],
-  4: [[10,0,21,0]],
-  5: [[14,0,25,0]],
-  6: [[10,0,22,0]],
+  1: [[12,0,21,0]],
+  3: [[12,0,21,0]],
+  4: [[12,0,21,0]],
+  5: [[12,0,25,0]],
+  6: [[10,0,25,0]],
   0: [[12,0,21,0]],
 };
 
@@ -38,7 +37,7 @@ function nextChangeInfo(){
   const now = isOpenAt(day, minutes);
 
   if (now.open){
-    return { open:true, text:"Ouvert", next:`Ferme à ${fmtTime(now.end)}` };
+    return { open:true, text:"Ouvert", next:`Fermé à ${fmtTime(now.end)}` };
   }
 
   for (let offset=0; offset<8; offset++){
@@ -70,7 +69,7 @@ function renderStatus(){
   pill.classList.toggle("closed", !info.open);
 
   const todaySlots = schedule[day] || [];
-  let todayStr = "Aujourd’hui : fermé";
+  let todayStr = "Aujourd’hui : Fermé";
   if (todaySlots.length){
     todayStr = `Aujourd’hui (${dayNames[day]}) : ` + todaySlots
       .map(([h1,m1,h2,m2]) => `${fmtTime(toMinutes(h1,m1))} – ${fmtTime(toMinutes(h2,m2))}`)
